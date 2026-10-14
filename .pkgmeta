@@ -1,0 +1,11 @@
+package-as: BonusRollLedger
+
+ignore:
+  - README.md
+  - logo.png
+  - .github
+  - .gitignore
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
