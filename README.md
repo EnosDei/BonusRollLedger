@@ -1,12 +1,14 @@
 # Bonus Roll Ledger
 
+**TL;DR:** remembers every bonus roll you make, on every character (boss, difficulty, loot spec, result). Type **`/brl`** to see them. Past rolls are imported from Simulationcraft automatically.
+
 Which spec did I bonus roll on for this boss? **Bonus Roll Ledger** remembers every bonus roll you make, on every character, so you can see it with one click.
 
 Your **loot spec** decides the bonus roll loot table, and each boss only gives each item once per difficulty. Knowing which specs you've already rolled on for a boss tells you where your next Voidcore is best spent.
 
 ## Install
 
-- **CurseForge app:** search for *Bonus Roll Ledger* and install.
+- **CurseForge:** [curseforge.com/wow/addons/bonus-roll-ledger](https://www.curseforge.com/wow/addons/bonus-roll-ledger), or search for *Bonus Roll Ledger* in the app.
 - **Manual:** download the latest zip from the [Releases page](https://github.com/EnosDei/BonusRollLedger/releases) and extract the `BonusRollLedger` folder into `World of Warcraft/_retail_/Interface/AddOns/`.
 
 ## Using it
