@@ -3,7 +3,7 @@
 ## Notes: Remembers every bonus roll per character: which boss, difficulty and loot spec, and what you got. /brl or the addon compartment button opens it.
 ## Author: EnosDei
 ## X-Curse-Project-ID: 1744041
-## Version: 0.1.0
+## Version: 0.2.0
 ## SavedVariables: BonusRollLedgerDB
 ## OptionalDeps: Simulationcraft
 ## IconTexture: Interface\AddOns\BonusRollLedger\Media\icon
@@ -11,5 +11,6 @@
 ## AddonCompartmentFuncOnEnter: BonusRollLedger_OnCompartmentEnter
 ## AddonCompartmentFuncOnLeave: BonusRollLedger_OnCompartmentLeave
 
+MinimapButton.lua
 Core.lua
 UI.lua

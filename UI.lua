@@ -224,7 +224,22 @@ end
 
 SLASH_BONUSROLLLEDGER1 = "/brl"
 SLASH_BONUSROLLLEDGER2 = "/bonusrolls"
-SlashCmdList.BONUSROLLLEDGER = function() ns.Toggle() end
+SlashCmdList.BONUSROLLLEDGER = function(msg)
+    if (msg or ""):lower():match("^%s*minimap") and ns.button then ns.button.Toggle() else ns.Toggle() end
+end
+
+local mm = CreateFrame("Frame")
+mm:RegisterEvent("PLAYER_LOGIN")
+mm:SetScript("OnEvent", function()
+    BonusRollLedgerDB = BonusRollLedgerDB or {}
+    BonusRollLedgerDB.minimap = BonusRollLedgerDB.minimap or {}
+    ns.button = ns.MinimapButton{ name = "BonusRollLedger", icon = "Interface\\AddOns\\BonusRollLedger\\Media\\icon",
+        db = BonusRollLedgerDB.minimap, slash = "brl", onClick = function() ns.Toggle() end,
+        tooltip = function(tt)
+            tt:SetText("Bonus Roll Ledger")
+            tt:AddLine("Click to see which boss, difficulty and loot spec you've used bonus rolls on.", 1, 1, 1, true)
+        end }
+end)
 
 function BonusRollLedger_OnCompartmentClick() ns.Toggle() end
 function BonusRollLedger_OnCompartmentEnter(_, button)
